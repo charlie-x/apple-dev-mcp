@@ -1,0 +1,30 @@
+{
+  "name": "hig-mcp",
+  "version": "1.0.0",
+  "description": "apple human interface guidelines mcp server as cloudflare worker",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build:search-index": "tsx scripts/generate-search-index.ts",
+    "build:bulk-upload": "tsx scripts/create-bulk-upload.ts",
+    "upload-content": "npm run build:bulk-upload && wrangler kv bulk put content-bulk.json --namespace-id=0b848b67d8e64ee9aa860c75f09c0da9",
+    "verify": "tsx scripts/verify-setup.ts",
+    "build": "tsc",
+    "test": "vitest",
+    "prepare": "npm run build:search-index"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "agents": "^0.1.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250115.0",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8",
+    "wrangler": "^3.105.0"
+  }
+}

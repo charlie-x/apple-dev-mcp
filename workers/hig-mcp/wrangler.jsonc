@@ -1,0 +1,12 @@
+{
+  "name": "hig-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-02-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "kv_namespaces": [
+    {
+      "binding": "CONTENT_KV",
+      "id": "0b848b67d8e64ee9aa860c75f09c0da9"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.wrangler/
+
+# secrets and config
+.dev.vars
+.env
+.env.*
+*.local
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# logs
+*.log
+
+# os
+.DS_Store
+
+# generated content
+content-bulk.json
