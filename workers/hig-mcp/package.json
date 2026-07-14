@@ -15,8 +15,8 @@
     "prepare": "npm run build:search-index"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.26.0",
-    "agents": "^0.3.10",
+    "@modelcontextprotocol/sdk": "^1.28.0",
+    "agents": "^0.17.4",
     "zod": "^3.24.1"
   },
   "devDependencies": {
